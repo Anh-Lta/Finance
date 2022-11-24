@@ -37,9 +37,9 @@
 		</div>
 	</header>
 	<section class="bg-[#EDEDED] ">
-		<div class="container mx-auto">
+		<div class="containerpl mx-auto">
 			<div class="m-4 mt-0 pt-4 md:grid md:grid-cols-3">
-				<div class=" md:max-w-[242px] mb-6 md:text-center">
+				<div class=" mb-6 md:text-center">
 					<div class="flex md:flex-col items-center gap-4 ">
 						<img class="w-[62px] "
 							src="https://w.ladicdn.com/s400x350/5dadc2a03bf9ab4ea2cc8ccb/screenshot_7-20221117034648-e20fy.png"
@@ -48,7 +48,7 @@
 					</div>
 					<p class="text-sm mt-2">Ngân hàng áp dụng lãi suất ưu đãi từ 0.6%/năm</p>
 				</div>
-				<div class=" md:max-w-[242px] mb-6 md:text-center">
+				<div class=" mb-6 md:text-center">
 					<div class="flex md:flex-col items-center gap-4 ">
 						<img class="w-[50px] h-[45px]"
 							src="https://w.ladicdn.com/s350x350/5dadc2a03bf9ab4ea2cc8ccb/screenshot_8-20221117034648-q_ptm.png"
@@ -59,7 +59,7 @@
 						chấp
 						tài sản từ 1 tỷ đến 50 tỷ đồng</p>
 				</div>
-				<div class=" md:max-w-[242px] mb-6 md:text-center">
+				<div class=" mb-6 md:text-center">
 					<div class="flex md:flex-col items-center gap-4 ">
 						<img class="w-[50px] h-[45px]"
 							src="https://w.ladicdn.com/s400x350/5dadc2a03bf9ab4ea2cc8ccb/screenshot_9-20221117034648-ua_wk.png"
@@ -70,7 +70,7 @@
 						trợ
 						1 - 20 năm</p>
 				</div>
-				<div class=" md:max-w-[242px] mb-6 md:text-center">
+				<div class=" mb-6 md:text-center">
 					<div class="flex md:flex-col items-center gap-4 ">
 						<img class="w-[52px] h-[51px]"
 							src="https://w.ladicdn.com/s400x400/5dadc2a03bf9ab4ea2cc8ccb/screenshot_13-20221117034649-vqeba.png"
@@ -79,7 +79,7 @@
 					</div>
 					<p class="text-sm mt-2">Hỗ trợ nhanh chóng, hồ sơ 24 - 48h giải ngân</p>
 				</div>
-				<div class=" md:max-w-[242px] mb-6 md:text-center">
+				<div class=" mb-6 md:text-center">
 					<div class="flex md:flex-col items-center gap-4 ">
 						<img class="w-[50px] h-[45px]"
 							src="https://w.ladicdn.com/s350x350/5dadc2a03bf9ab4ea2cc8ccb/screenshot_12-20221117034648-ilob9.png"
@@ -88,7 +88,7 @@
 					</div>
 					<p class="text-sm mt-2">Hồ sợ đăng ký đơn giản, nhanh chóng</p>
 				</div>
-				<div class=" md:max-w-[242px] mb-6 md:text-center">
+				<div class=" mb-6 md:text-center">
 					<div class="flex md:flex-col items-center gap-4 ">
 						<img class="w-[48px] h-[50px]"
 							src="https://w.ladicdn.com/s350x400/5dadc2a03bf9ab4ea2cc8ccb/screenshot_10-20221117034648-h-7eo.png"
@@ -256,7 +256,7 @@
 		</div>
 	</section>
 	<section>
-		<div class="container mx-auto">
+		<div class="containerpl mx-auto">
 			<div class="mx-4">
 				<div class="text-center">
 					<h2 class="text-[#008037] text-xl font-bold text-blue my-8">BẢNG LÃI SUẤT THAM KHẢO</h2>
@@ -327,7 +327,7 @@
 		</div>
 	</section>
 	<section>
-		<div class="container mx-auto">
+		<div class="containerpl mx-auto">
 			<div class="md:grid justify-between items-center grid-cols-2">
 				<div class="md:mt-16">
 					<div class="mx-4 mt-16 md:mt-0">
@@ -631,9 +631,9 @@
 			<div id="authentication-modal" tabindex="-1" aria-hidden="true" class="">
 				<div class="relative w-full max-w-md h-full md:h-auto ">
 					<!-- Modal content -->
-					<div class="relative bg-white rounded-lg shadow dark:bg-gray-700 m-4">
+					<div class="relative bg-white rounded-lg shadow  m-4">
 						<button type="button" onclick="hidePopup()"
-							class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+							class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center "
 							data-modal-toggle="authentication-modal">
 							<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
 								xmlns="http://www.w3.org/2000/svg">
@@ -650,54 +650,54 @@
 							<form class="space-y-6" action="#" id="myForm" method="post">
 								<div>
 									<input type="text" name="name" id="name"
-										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
 										placeholder="Họ và Tên" required>
 								</div>
 								<div>
 									<input type="tel" name="phonenumber" id="phonenumber"
-										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
 										placeholder="Số điện thoại" required>
 								</div>
 								<div>
 									<input type="text" name="diachi" id="diachi"
-										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
 										placeholder="Địa chỉ thường trú" required>
 								</div>
 								<div>
 									<input type="number" name="number" id="numbermoney"
-										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white numbermoney"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 numbermoney"
 										placeholder="Số tiền đăng ký vay" required>
 								</div>
 								<div>
-									<label for="So tien vay"
-										class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lựa chọn
+									<label for="So tien vay" class="block mb-2 text-sm font-medium text-gray-900 ">Lựa
+										chọn
 										gói vay</label>
 									<div class="flex items-center">
 										<input id="checked-checkbox " type="checkbox" value=""
 											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
 										<label for="checked-checkbox"
-											class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vay theo
+											class="ml-2 text-sm font-medium text-gray-900 ">Vay theo
 											bảng lương</label>
 									</div>
 									<div class="flex items-center">
 										<input id="checked-checkbox " type="checkbox" value=""
 											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
 										<label for="checked-checkbox"
-											class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vay theo
+											class="ml-2 text-sm font-medium text-gray-900 ">Vay theo
 											bảo hiểm nhân thọ</label>
 									</div>
 									<div class="flex items-center">
 										<input id="checked-checkbox " type="checkbox" value=""
 											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
 										<label for="checked-checkbox"
-											class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vay theo
+											class="ml-2 text-sm font-medium text-gray-900 ">Vay theo
 											hợp đồng vay cũ</label>
 									</div>
 									<div class="flex items-center">
 										<input id="checked-checkbox " type="checkbox" value=""
 											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
 										<label for="checked-checkbox"
-											class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vay theo
+											class="ml-2 text-sm font-medium text-gray-900 ">Vay theo
 											hóa đơn</label>
 									</div>
 								</div>
