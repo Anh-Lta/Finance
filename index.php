@@ -18,13 +18,13 @@
 <body>
 
 	<header>
-		<div class="md:relative">
+		<div class="">
 			<div class="header-img ">
 				<img class="w-full "
 					src="https://w.ladicdn.com/s900x500/5dadc2a03bf9ab4ea2cc8ccb/untitled-20221017151151-ymoev-20221117031419-nbz4q.png"
 					alt="Vay tín chấp">
 			</div>
-			<div class="flex md:absolute bottom-30px left-0 container">
+			<div class="flex  bottom-30px left-0 container">
 				<div class=" ">
 					<img src="https://w.ladicdn.com/s550x400/5dadc2a03bf9ab4ea2cc8ccb/untitledfwe-20221019015815-wvdu5-20221117031605-th6tr.png"
 						alt="">
@@ -179,8 +179,7 @@
 			<div class="mt-16 mx-4 pb-10 md:flex justify-between gap-8">
 				<div class="shadow-lg bg-white rounded-md">
 					<div class="mx-4">
-						<img class="pt-4 w-full rounded-md max-h-[236px]"
-							src="https://w.ladicdn.com/s650x500/5dadc2a03bf9ab4ea2cc8ccb/banner-web-20221017154655-yoedu-20221117035801-ihzrl.jpg"
+						<img class="object-cover pt-4 w-full rounded-md max-h-[200px]" src="./img/gv1.jpg"
 							alt="Vay tín chấp Ưu đãi giáo viên">
 						<h4 class="text-[#008037] text-lg font-bold text-center mt-6">Vay tín chấp Ưu đãi giáo viên</h4>
 						<ul class="my-6">
@@ -204,8 +203,7 @@
 				</div>
 				<div class="shadow-lg bg-white rounded-md md:my-0 my-6">
 					<div class="mx-4">
-						<img class="pt-4 w-full rounded-md max-h-[236px]"
-							src="https://w.ladicdn.com/s650x500/5dadc2a03bf9ab4ea2cc8ccb/huong-dan-20221017154726-0-jsm-20221117035801-1bynt.jpg"
+						<img class="object-cover pt-4 w-full rounded-md max-h-[200px]" src="./img/gv2.jpg"
 							alt="Vay tín chấp Ưu đãi giáo viên">
 						<h4 class="text-[#008037] text-lg font-bold text-center mt-6">Vay tín chấp Ưu đãi giáo viên</h4>
 						<ul class="my-6">
@@ -229,7 +227,7 @@
 				</div>
 				<div class="shadow-lg bg-white rounded-md">
 					<div class="mx-4">
-						<img class="pt-4 w-full rounded-md max-h-[236px]"
+						<img class="pt-4 w-full rounded-md max-h-[200px]"
 							src="https://w.ladicdn.com/s650x500/5dadc2a03bf9ab4ea2cc8ccb/uudaithe-20221017154759-whxqb-20221117035800-cfzp-.jpg"
 							alt="Vay tín chấp Ưu đãi giáo viên">
 						<h4 class="text-[#008037] text-lg font-bold text-center mt-6">Vay tín chấp Ưu đãi giáo viên</h4>
@@ -608,7 +606,8 @@
 					</div>
 				</div>
 				<div class="mt-6">
-					<img src="https://w.ladicdn.com/s750x550/5dadc2a03bf9ab4ea2cc8ccb/anh-1-20221018161634-4oumo-20221117042616-sytbo.png"
+					<img class="max-h-[400px]"
+						src="https://images.pexels.com/photos/2988232/pexels-photo-2988232.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 						alt="">
 
 				</div>
@@ -664,7 +663,7 @@
 										placeholder="Địa chỉ thường trú" required>
 								</div>
 								<div>
-									<input type="number" name="number" id="numbermoney"
+									<input type="number" name="numbermoney" id="numbermoney"
 										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 numbermoney"
 										placeholder="Số tiền đăng ký vay" required>
 								</div>
@@ -731,31 +730,6 @@
 	if (window.history.replaceState) {
 		window.history.replaceState(null, null, window.location.href);
 	}
-
-	// $("input.numbermoney").each((i, ele) => {
-	// 	let clone = $(ele).clone(false)
-	// 	clone.attr("type", "text")
-	// 	let ele1 = $(ele)
-	// 	clone.val(Number(ele1.val()).toLocaleString("en"))
-	// 	$(ele).after(clone)
-	// 	$(ele).hide()
-	// 	clone.mouseenter(() => {
-
-	// 		ele1.show()
-	// 		clone.hide()
-	// 	})
-	// 	setInterval(() => {
-	// 		let newv = Number(ele1.val()).toLocaleString("en")
-	// 		if (clone.val() != newv) {
-	// 			clone.val(newv)
-	// 		}
-	// 	}, 10)
-
-	// 	$(ele).mouseleave(() => {
-	// 		$(clone).show()
-	// 		$(ele1).hide()
-	// 	})
-	// })
 	</script>
 </body>
 
