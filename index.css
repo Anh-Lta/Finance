@@ -41,9 +41,3 @@ body {
         transform: scale(1.1);
     }
 }
-@media (min-width: 1024px) {
-    .container {
-        width: 980px;
-        margin: 0 auto;
-    }
-}
