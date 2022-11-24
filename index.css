@@ -30,7 +30,9 @@ body {
     left: -24px;
     background-color: #ff5757;
 }
-.CTA {
+.CTA,
+.CTAPopup,
+.CTACall {
     animation: scale 0.25s infinite alternate;
 }
 @keyframes scale {
@@ -39,5 +41,13 @@ body {
     }
     100% {
         transform: scale(1.1);
+    }
+}
+.checkbox {
+    accent-color: #008037;
+}
+@media (min-width: 960px) {
+    .container {
+        max-width: 980px;
     }
 }

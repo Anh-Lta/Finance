@@ -1,3 +1,4 @@
+<?php include 'sendEmail.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +9,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="./index.css">
+	<link rel="icon" href="./img/FinanceLogo.png" type="image/gif" sizes="20x20">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<title>Vay tiêu dùng</title>
 </head>
 
 <body>
+
 	<header>
 		<div class="md:relative">
 			<div class="header-img ">
@@ -33,7 +37,7 @@
 		</div>
 	</header>
 	<section class="bg-[#EDEDED] ">
-		<div class="container">
+		<div class="container mx-auto">
 			<div class="m-4 mt-0 pt-4 md:grid md:grid-cols-3">
 				<div class=" md:max-w-[242px] mb-6 md:text-center">
 					<div class="flex md:flex-col items-center gap-4 ">
@@ -96,7 +100,7 @@
 			</div>
 			<div class="mt-16 md:flex items-center justify-between">
 				<img src="https://w.ladicdn.com/s800x700/5dadc2a03bf9ab4ea2cc8ccb/personaldger-20221017153202-_wxjt-1-20221117035229-bq06z.jpg"
-					alt="" class="max-w-[470px]">
+					alt="" class="md:max-w-[470px]">
 				<div class="m-4">
 					<h2 class="text-[#008037] text-lg font-bold text-blue mt-8">DỊCH VỤ CHÚNG TÔI CUNG CẤP</h2>
 					<p class="text-[#FF5757] font-bold my-4">Giải pháp tài chính hoàn hảo</p>
@@ -613,16 +617,146 @@
 		<div class="flex justify-between items-center">
 			<a href="tel:0383355979">
 				<div>
-					<img class="fixed bottom-[30px] left-[16px]  w-[120px] CTA"
+					<img class="fixed bottom-[30px] left-[16px]  w-[120px] CTACall"
 						src="https://w.ladicdn.com/s400x350/5dadc2a03bf9ab4ea2cc8ccb/goi-ngay-20221018160133-w6doj-20221117043102-iqynj.png"
 						alt="">
 				</div>
 			</a>
-			<button
-				class="fixed bottom-[30px] right-[16px]   CTA hover:scale-110 shadow shadow-lg shadow-green-600/30 transition delay-300 duration-300 ease-in-out font-bold text-sm text-white bg-[#008037] px-4 py-2 rounded-lg">ĐĂNG
+			<button type="button" data-modal-toggle="authentication-modal"
+				class="fixed bottom-[30px] right-[16px] CTA hover:scale-110 shadow shadow-lg shadow-green-600/30 transition delay-300 duration-300 ease-in-out font-bold text-sm text-white bg-[#008037] px-4 py-2 rounded-lg">ĐĂNG
 				KÝ TƯ VẤN</button>
 		</div>
+		<div
+			class="h-screen fixed top-0 left-0 flex justify-center items-center mx-auto w-full bg-gray-200 bg-opacity-50 drop-shadow-2xl backdrop-blur-sm popup hidden">
+			<div id="authentication-modal" tabindex="-1" aria-hidden="true" class="">
+				<div class="relative w-full max-w-md h-full md:h-auto ">
+					<!-- Modal content -->
+					<div class="relative bg-white rounded-lg shadow dark:bg-gray-700 m-4">
+						<button type="button" onclick="hidePopup()"
+							class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+							data-modal-toggle="authentication-modal">
+							<svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+								xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd"
+									d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+									clip-rule="evenodd"></path>
+							</svg>
+							<span class="sr-only">Close modal</span>
+						</button>
+						<div class="py-6 px-6 lg:px-8">
+							<h3 class="mb-4 text-[#008037] text-lg font-bold mt-6 text-center">ĐĂNG KÝ ĐỂ ĐƯỢC NHẬN TƯ
+								VẤN TỪ CHÚNG TÔI
+							</h3>
+							<form class="space-y-6" action="#" id="myForm" method="post">
+								<div>
+									<input type="text" name="name" id="name"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+										placeholder="Họ và Tên" required>
+								</div>
+								<div>
+									<input type="tel" name="phonenumber" id="phonenumber"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+										placeholder="Số điện thoại" required>
+								</div>
+								<div>
+									<input type="text" name="diachi" id="diachi"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+										placeholder="Địa chỉ thường trú" required>
+								</div>
+								<div>
+									<input type="number" name="number" id="numbermoney"
+										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white numbermoney"
+										placeholder="Số tiền đăng ký vay" required>
+								</div>
+								<div>
+									<label for="So tien vay"
+										class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lựa chọn
+										gói vay</label>
+									<div class="flex items-center">
+										<input id="checked-checkbox " type="checkbox" value=""
+											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
+										<label for="checked-checkbox"
+											class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vay theo
+											bảng lương</label>
+									</div>
+									<div class="flex items-center">
+										<input id="checked-checkbox " type="checkbox" value=""
+											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
+										<label for="checked-checkbox"
+											class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vay theo
+											bảo hiểm nhân thọ</label>
+									</div>
+									<div class="flex items-center">
+										<input id="checked-checkbox " type="checkbox" value=""
+											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
+										<label for="checked-checkbox"
+											class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vay theo
+											hợp đồng vay cũ</label>
+									</div>
+									<div class="flex items-center">
+										<input id="checked-checkbox " type="checkbox" value=""
+											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
+										<label for="checked-checkbox"
+											class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Vay theo
+											hóa đơn</label>
+									</div>
+								</div>
+								<div class="flex justify-center">
+									<button type="submit"
+										class="CTAPopup hover:scale-110 shadow shadow-lg shadow-green-600/30 transition delay-300 duration-300 ease-in-out font-bold text-sm text-white bg-[#008037] px-10 py-2 rounded-lg">Đăng
+										ký</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+	<script>
+	const popup = document.querySelector(".popup");
+	const CTAs = document.querySelectorAll(".CTA");
+	const hidePopup = () => {
+		popup.classList.add("hidden")
+	}
+	CTAs.forEach((CTA) =>
+		CTA.addEventListener("click", function() {
+			popup.classList.remove("hidden")
+		})
+	);
+	const showPopup = () => {
+		popup.classList.remove("hidden")
+	}
+
+	if (window.history.replaceState) {
+		window.history.replaceState(null, null, window.location.href);
+	}
+
+	$("input.numbermoney").each((i, ele) => {
+		let clone = $(ele).clone(false)
+		clone.attr("type", "text")
+		let ele1 = $(ele)
+		clone.val(Number(ele1.val()).toLocaleString("en"))
+		$(ele).after(clone)
+		$(ele).hide()
+		clone.mouseenter(() => {
+
+			ele1.show()
+			clone.hide()
+		})
+		setInterval(() => {
+			let newv = Number(ele1.val()).toLocaleString("en")
+			if (clone.val() != newv) {
+				clone.val(newv)
+			}
+		}, 10)
+
+		$(ele).mouseleave(() => {
+			$(clone).show()
+			$(ele1).hide()
+		})
+	})
+	</script>
 </body>
 
 </html>
