@@ -228,7 +228,7 @@
 				</div>
 				<div class="shadow-lg bg-white rounded-md">
 					<div class="mx-4">
-						<img class="pt-4 w-full rounded-md max-h-[200px] "
+						<img class="pt-4 w-full rounded-md max-h-[200px] object-cover"
 							src="https://w.ladicdn.com/s650x500/5dadc2a03bf9ab4ea2cc8ccb/uudaithe-20221017154759-whxqb-20221117035800-cfzp-.jpg"
 							alt="Vay tín chấp Ưu đãi giáo viên">
 						<h4 class="text-[#008037] text-lg font-bold text-center mt-6">Vay tín chấp Ưu đãi giáo viên</h4>
