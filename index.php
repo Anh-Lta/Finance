@@ -8,6 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 	<link rel="stylesheet" href="./index.css">
 	<link rel="icon" href="./img/FinanceLogo.png" type="image/gif" sizes="20x20">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -179,7 +180,7 @@
 			<div class="mt-16 mx-4 pb-10 md:flex justify-between gap-8">
 				<div class="shadow-lg bg-white rounded-md">
 					<div class="mx-4">
-						<img class="object-cover pt-4 w-full rounded-md max-h-[200px]" src="./img/gv1.jpg"
+						<img class="object-cover pt-4 w-full rounded-md max-h-[200px] " src="./img/gv1.jpg"
 							alt="Vay tín chấp Ưu đãi giáo viên">
 						<h4 class="text-[#008037] text-lg font-bold text-center mt-6">Vay tín chấp Ưu đãi giáo viên</h4>
 						<ul class="my-6">
@@ -203,7 +204,7 @@
 				</div>
 				<div class="shadow-lg bg-white rounded-md md:my-0 my-6">
 					<div class="mx-4">
-						<img class="object-cover pt-4 w-full rounded-md max-h-[200px]" src="./img/gv2.jpg"
+						<img class="object-cover pt-4 w-full rounded-md max-h-[200px] " src="./img/gv2.jpg"
 							alt="Vay tín chấp Ưu đãi giáo viên">
 						<h4 class="text-[#008037] text-lg font-bold text-center mt-6">Vay tín chấp Ưu đãi giáo viên</h4>
 						<ul class="my-6">
@@ -227,7 +228,7 @@
 				</div>
 				<div class="shadow-lg bg-white rounded-md">
 					<div class="mx-4">
-						<img class="pt-4 w-full rounded-md max-h-[200px]"
+						<img class="pt-4 w-full rounded-md max-h-[200px] "
 							src="https://w.ladicdn.com/s650x500/5dadc2a03bf9ab4ea2cc8ccb/uudaithe-20221017154759-whxqb-20221117035800-cfzp-.jpg"
 							alt="Vay tín chấp Ưu đãi giáo viên">
 						<h4 class="text-[#008037] text-lg font-bold text-center mt-6">Vay tín chấp Ưu đãi giáo viên</h4>
@@ -646,7 +647,7 @@
 							<h3 class="mb-4 text-[#008037] text-lg font-bold mt-6 text-center">ĐĂNG KÝ ĐỂ ĐƯỢC NHẬN TƯ
 								VẤN TỪ CHÚNG TÔI
 							</h3>
-							<form class="space-y-6" action="#" id="myForm" method="post">
+							<form class="space-y-6" action="" id="myForm" method="post">
 								<div>
 									<input type="text" name="name" id="name"
 										class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
@@ -701,7 +702,7 @@
 									</div>
 								</div>
 								<div class="flex justify-center">
-									<button type="submit"
+									<button type="submit" name="submit"
 										class="CTAPopup hover:scale-110 shadow shadow-lg shadow-green-600/30 transition delay-300 duration-300 ease-in-out font-bold text-sm text-white bg-[#008037] px-10 py-2 rounded-lg">Đăng
 										ký</button>
 								</div>
