@@ -1,4 +1,6 @@
+<?php error_reporting(0); ?>
 <?php
+
 use PHPMailer\PHPMailer\PHPMailer;
 
 require_once 'phpmailer/Exception.php';
@@ -9,13 +11,22 @@ $mail = new PHPMailer(true);
 
 $alert = '';
 
-if(isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
   $name = $_POST['name'];
   $phoneNumber = $_POST['phonenumber'];
   $address = $_POST['diachi'];
   $numberMoney = $_POST['numbermoney'];
+  // if (isset($_POST['vaytheo'])) {
+  //   $vaytheos = $_POST['vaytheo'];
+  // }
+  if (isset($_POST['bangLuong']) || isset($_POST['baoHiemNhanTho']) || isset($_POST['hopDongVayCu']) || isset($_POST['hoaDon'])) {
+    $bangluong = $_POST['bang-Luong'];
+    $baohiemnhantho = $_POST['bao-Hiem-Nhan-Tho'];
+    $hopDongVayCu = $_POST['hop-Dong-Vay-Cu'];
+    $hoaDon = $_POST['hoa-Don'];
+  }
 
-  try{
+  try {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
@@ -29,16 +40,26 @@ if(isset($_POST['submit'])){
 
     $mail->isHTML(true);
     $mail->Subject = 'New Finance client ';
-    $mail->Body = "<h3>Name : $name <br>Địa chỉ: $address <br>Sđt : $phoneNumber <br>Số tiền vay: $numberMoney</h3>";
 
+    // if (isset($_POST['vaytheo'])) {
+    //   foreach ($_POST['vaytheo'] as $value) {
+    $mail->Body =  "<h4>Họ và tên : $name <br>
+                        Địa chỉ: $address <br>
+                        Số điện thoại : $phoneNumber <br>
+                        Số tiền vay: $numberMoney <br>
+                        
+
+                        </h4>";
+    // }
+    // }
+    // Vay theo : {$bangluong} $baohiemnhantho $hopDongVayCu $hoaDon
     $mail->send();
     $alert = '<div class="alert-success">
                  <span>Message Sent! Thank you for contacting us.</span>
                 </div>';
-  } catch (Exception $e){
+  } catch (Exception $e) {
     $alert = '<div class="alert-error">
-                <span>'.$e->getMessage().'</span>
+                <span>' . $e->getMessage() . '</span>
               </div>';
   }
 }
-?>

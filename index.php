@@ -1,4 +1,5 @@
 <?php include 'sendEmail.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -673,28 +674,31 @@
 										chọn
 										gói vay</label>
 									<div class="flex items-center">
-										<input id="checked-checkbox " type="checkbox" value=""
+										<input id="checked-checkbox " type="checkbox" value="bang-Luong"
+											name="vaytheo[]"
 											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
 										<label for="checked-checkbox"
 											class="ml-2 text-sm font-medium text-gray-900 ">Vay theo
 											bảng lương</label>
 									</div>
 									<div class="flex items-center">
-										<input id="checked-checkbox " type="checkbox" value=""
+										<input id="checked-checkbox " type="checkbox" value="bao-Hiem-Nhan-Tho"
+											name="vaytheo[]"
 											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
 										<label for="checked-checkbox"
 											class="ml-2 text-sm font-medium text-gray-900 ">Vay theo
 											bảo hiểm nhân thọ</label>
 									</div>
 									<div class="flex items-center">
-										<input id="checked-checkbox " type="checkbox" value=""
+										<input id="checked-checkbox " type="checkbox" value="hop-Dong-Vay-Cu"
+											name="vaytheo[]"
 											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
 										<label for="checked-checkbox"
 											class="ml-2 text-sm font-medium text-gray-900 ">Vay theo
 											hợp đồng vay cũ</label>
 									</div>
 									<div class="flex items-center">
-										<input id="checked-checkbox " type="checkbox" value=""
+										<input id="checked-checkbox " type="checkbox" value="hoa-Don" name="vaytheo[]"
 											class="w-4 h-4 text-[#008037] bg-gray-100 rounded border-gray-300 focus:ring-[#008037] accent-[#008037]  focus:ring-2 ">
 										<label for="checked-checkbox"
 											class="ml-2 text-sm font-medium text-gray-900 ">Vay theo
